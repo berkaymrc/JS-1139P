@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div class="team" id="teamA">
+            <img src="images/616px-Galatasaray_Sports_Club_Logo.png" alt="logo" width="25%">
+            <h2>Team A</h2>
+            <p class="score" id="scoreA">0</p>
+            <div class="score-controls">
+                <button onclick="decreaseScore('A')">Gol Azalt</button>
+                <button onclick="increaseScore('A')">Gol Ekle</button>
+            </div>
+            <button onclick="setScorePrompt('A')">Gol Ayarla</button>
+            <button onclick="setNamePrompt('A')">Takım İsim Değiştir</button>
+            <button id="resetButtonA">Sıfırla</button>
+        </div>
+        <div class="team" id="teamB">
+            <img src="./images/20210127193236!Fenerbahçe_SK.png" alt="logo" width="30%">
+            <h2>Team B</h2>
+            <p class="score" id="scoreB">0</p>
+            <div class="score-controls">
+                <button onclick="decreaseScore('B')">Gol Azalt</button>
+                <button onclick="increaseScore('B')">Gol Ekle</button>
+            </div>
+            <button onclick="setScorePrompt('B')">Gol Ayarla</button>
+            <button onclick="setNamePrompt('B')">Takım İsim Değiştir</button>
+            <button id="resetButtonB">Sıfırla</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
